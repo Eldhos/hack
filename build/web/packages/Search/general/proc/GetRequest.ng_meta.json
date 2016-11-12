@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "printHello": {
+      "class": "Identifier",
+      "name": "printHello",
+      "moduleUrl": "asset:Search/lib/general/proc/GetRequest.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

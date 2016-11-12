@@ -1,0 +1,263 @@
+<PreparePurchaseRequestType xmlns:ns2="urn:expedia:supply:provider:air:v1:preparepurchase" xmlns:ns3="urn:expedia:supply:provider:air:v3">
+    <ns2:MessageContext>
+        <ns3:MessageGUID>ff0bdf71-a2f0-4e82-b941-95960cfd7bb1</ns3:MessageGUID>
+        <ns3:TransactionGUID>4dcefa59-14f4-4b5c-8d29-037f5b44f839</ns3:TransactionGUID>
+        <ns3:MessageReference>TPID=70201,EAPID=0,TUID=236742,</ns3:MessageReference>
+        <ns3:DebugTrace>false</ns3:DebugTrace>
+        <ns3:ClientHostname>chelappabo005.karmalab.net</ns3:ClientHostname>
+        <ns3:SpoofID>0</ns3:SpoofID>
+        <ns3:UserIP>10.184.33.176</ns3:UserIP>
+    </ns2:MessageContext>
+    <ns2:SiteMessageContext>
+        <ns3:PointOfSaleKey>
+            <ns3:JurisdictionCountryCode>USA</ns3:JurisdictionCountryCode>
+            <ns3:CompanyCode>10132</ns3:CompanyCode>
+            <ns3:ManagementUnitCode>4010</ns3:ManagementUnitCode>
+        </ns3:PointOfSaleKey>
+    </ns2:SiteMessageContext>
+    <ns2:ProductRequest>
+        <ns3:RequestedCabinType>coach</ns3:RequestedCabinType>
+        <ns3:ItineraryRequest>
+            <ns3:OriginDestinationRequestList>
+                <ns3:OriginDestinationRequest>
+                    <ns3:SegmentRequestList>
+                        <ns3:SegmentRequest>
+                            <ns3:CarrierCode>AA</ns3:CarrierCode>
+                            <ns3:FlightNumber>117</ns3:FlightNumber>
+                            <ns3:OperatingFlightNumber>117</ns3:OperatingFlightNumber>
+                            <ns3:DepartureAirportCode>JFK</ns3:DepartureAirportCode>
+                            <ns3:ArrivalAirportCode>LAX</ns3:ArrivalAirportCode>
+                            <ns3:DepartureDateTime>2016-09-15T15:30:00-04:00</ns3:DepartureDateTime>
+                            <ns3:ArrivalDateTime>2016-09-15T18:43:00-07:00</ns3:ArrivalDateTime>
+                            <ns3:MarriedToPrevious>false</ns3:MarriedToPrevious>
+                            <ns3:SegmentBookingCode>O</ns3:SegmentBookingCode>
+                            <ns3:SegmentStopCount>0</ns3:SegmentStopCount>
+                            <ns3:SegmentAttributeList xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:SegmentAttributeList>
+                            <ns3:LegRequestList>
+                                <ns3:LegRequest>
+                                    <ns3:DepartureAirportCode>JFK</ns3:DepartureAirportCode>
+                                    <ns3:ArrivalAirportCode>LAX</ns3:ArrivalAirportCode>
+                                    <ns3:FlightEquipmentCode>32B</ns3:FlightEquipmentCode>
+                                </ns3:LegRequest>
+                            </ns3:LegRequestList>
+                        </ns3:SegmentRequest>
+                    </ns3:SegmentRequestList>
+                    <ns3:DepartureMetroCode>JFK</ns3:DepartureMetroCode>
+                    <ns3:ArrivalMetroCode>LAX</ns3:ArrivalMetroCode>
+                </ns3:OriginDestinationRequest>
+            </ns3:OriginDestinationRequestList>
+        </ns3:ItineraryRequest>
+        <ns3:BookingConstruct>{BFSDiag}{FC}15SEP16NYC AA LAX115.35USD115.35END&lt;XPGUID&gt;3AA65C8F40844E3EB02E3B8745D54B59&lt;/XPGUID&gt;{/FC}{DollarAfc}{/DollarAfc}{/BFSDiag}</ns3:BookingConstruct>
+        <ns3:FareBookInstructions>
+            <ns3:FareType>Published</ns3:FareType>
+            <ns3:PurchaseCategory>Standalone</ns3:PurchaseCategory>
+        </ns3:FareBookInstructions>
+        <ns3:FareRequestList>
+            <ns3:FareRequest>
+                <ns3:TravelerFareApplicability>
+                    <ns3:PricingPTC>ADT</ns3:PricingPTC>
+                    <ns3:TravelerFareCategory>Normal</ns3:TravelerFareCategory>
+                </ns3:TravelerFareApplicability>
+                <ns3:FareComponentRequestList>
+                    <ns3:FareRequestComponent>
+                        <ns3:DepartureAirportCode>NYC</ns3:DepartureAirportCode>
+                        <ns3:ArrivalAirportCode>LAX</ns3:ArrivalAirportCode>
+                        <ns3:CarrierCode>AA</ns3:CarrierCode>
+                        <ns3:FareBasisCode>OA21ZSI3</ns3:FareBasisCode>
+                    </ns3:FareRequestComponent>
+                    <ns3:FareRequestComponent>
+                        <ns3:DepartureAirportCode>NYC</ns3:DepartureAirportCode>
+                        <ns3:ArrivalAirportCode>LAX</ns3:ArrivalAirportCode>
+                        <ns3:CarrierCode>AA</ns3:CarrierCode>
+                        <ns3:FareBasisCode>OA21ZSI4</ns3:FareBasisCode>
+                    </ns3:FareRequestComponent>
+                </ns3:FareComponentRequestList>
+                <ns3:TotalCurrencyAmount>
+                    <ns3:Amount>138.10</ns3:Amount>
+                    <ns3:CurrencyCode>USD</ns3:CurrencyCode>
+                </ns3:TotalCurrencyAmount>
+                <ns3:BaseCurrencyAmount>
+                    <ns3:Amount>115.35</ns3:Amount>
+                    <ns3:CurrencyCode>USD</ns3:CurrencyCode>
+                </ns3:BaseCurrencyAmount>
+                <ns3:TaxesCurrencyAmount>
+                    <ns3:Amount>22.75</ns3:Amount>
+                    <ns3:CurrencyCode>USD</ns3:CurrencyCode>
+                </ns3:TaxesCurrencyAmount>
+                <ns3:TaxDetailsList>
+                    <ns3:TaxDetails>
+                        <ns3:Amount>22.75</ns3:Amount>
+                        <ns3:CurrencyCode>USD</ns3:CurrencyCode>
+                        <ns3:TaxCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:TaxCode>
+                        <ns3:TaxDescriptionString xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:TaxDescriptionString>
+                    </ns3:TaxDetails>
+                </ns3:TaxDetailsList>
+                <ns3:PaymentMethodSurchargeCurrencyAmount>
+                    <ns3:Amount>0</ns3:Amount>
+                    <ns3:CurrencyCode>USD</ns3:CurrencyCode>
+                </ns3:PaymentMethodSurchargeCurrencyAmount>
+            </ns3:FareRequest>
+        </ns3:FareRequestList>
+        <ns3:FareRequestTotal>
+            <ns3:TotalCurrencyAmount>
+                <ns3:Amount>138.10</ns3:Amount>
+                <ns3:CurrencyCode>USD</ns3:CurrencyCode>
+            </ns3:TotalCurrencyAmount>
+            <ns3:BaseCurrencyAmount>
+                <ns3:Amount>115.35</ns3:Amount>
+                <ns3:CurrencyCode>USD</ns3:CurrencyCode>
+            </ns3:BaseCurrencyAmount>
+            <ns3:TaxesCurrencyAmount>
+                <ns3:Amount>22.75</ns3:Amount>
+                <ns3:CurrencyCode>USD</ns3:CurrencyCode>
+            </ns3:TaxesCurrencyAmount>
+            <ns3:TaxDetailsList xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:TaxDetailsList>
+            <ns3:PaymentMethodSurchargeCurrencyAmount>
+                <ns3:Amount>0</ns3:Amount>
+                <ns3:CurrencyCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:CurrencyCode>
+            </ns3:PaymentMethodSurchargeCurrencyAmount>
+        </ns3:FareRequestTotal>
+        <ns3:TicketingCarrierCode>AA</ns3:TicketingCarrierCode>
+        <ns3:TotalPaymentMethodSurchargeAmount>
+            <ns3:Amount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:Amount>
+            <ns3:CurrencyCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:CurrencyCode>
+        </ns3:TotalPaymentMethodSurchargeAmount>
+    </ns2:ProductRequest>
+    <ns2:Configuration>
+        <ns3:TravelerRequestList>
+            <ns3:TravelerRequest>
+                <ns3:TravelerType>adult</ns3:TravelerType>
+                <ns3:Person>
+                    <ns3:PersonName>
+                        <ns3:PersonalTitle xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:PersonalTitle>
+                        <ns3:FirstName>Evan</ns3:FirstName>
+                        <ns3:MiddleName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:MiddleName>
+                        <ns3:LastName>Kreft</ns3:LastName>
+                        <ns3:SuffixName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:SuffixName>
+                    </ns3:PersonName>
+                    <ns3:NationalityCountryAlpha3Code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:NationalityCountryAlpha3Code>
+                    <ns3:NationalityCountryAlpha2Code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:NationalityCountryAlpha2Code>
+                    <ns3:Gender>male</ns3:Gender>
+                    <ns3:Age>23</ns3:Age>
+                    <ns3:BirthDate>1993-06-12Z</ns3:BirthDate>
+                </ns3:Person>
+                <ns3:SecurityDocumentUsesTravelerName>true</ns3:SecurityDocumentUsesTravelerName>
+                <ns3:SecurityDocumentRedress></ns3:SecurityDocumentRedress>
+                <ns3:SecurityDocumentKnownTraveler></ns3:SecurityDocumentKnownTraveler>
+                <ns3:PassportList xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:PassportList>
+                <ns3:Preferences>
+                    <ns3:LoyaltyProgramList xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:LoyaltyProgramList>
+                    <ns3:AssistanceRequestList xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:AssistanceRequestList>
+                </ns3:Preferences>
+                <ns3:AirOrderedAncillaryList xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:AirOrderedAncillaryList>
+            </ns3:TravelerRequest>
+        </ns3:TravelerRequestList>
+        <ns3:TravelerFareMapRequestList>
+            <ns3:TravelerFareMapRequest>
+                <ns3:TravelerSequenceIndex>0</ns3:TravelerSequenceIndex>
+                <ns3:ApplicableFareSequenceIndex>0</ns3:ApplicableFareSequenceIndex>
+            </ns3:TravelerFareMapRequest>
+        </ns3:TravelerFareMapRequestList>
+        <ns3:DocumentationRequest>
+            <ns3:ClientItineraryReference xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:ClientItineraryReference>
+            <ns3:ContactPerson>
+                <ns3:Person>
+                    <ns3:PersonName>
+                        <ns3:PersonalTitle>unspecified</ns3:PersonalTitle>
+                        <ns3:FirstName>Evan</ns3:FirstName>
+                        <ns3:MiddleName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:MiddleName>
+                        <ns3:LastName>Kreft</ns3:LastName>
+                        <ns3:SuffixName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:SuffixName>
+                    </ns3:PersonName>
+                    <ns3:NationalityCountryAlpha3Code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:NationalityCountryAlpha3Code>
+                    <ns3:NationalityCountryAlpha2Code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:NationalityCountryAlpha2Code>
+                    <ns3:Gender>male</ns3:Gender>
+                    <ns3:Age>23</ns3:Age>
+                    <ns3:BirthDate>1993-06-12Z</ns3:BirthDate>
+                </ns3:Person>
+                <ns3:ContactInformation>
+                    <ns3:PhoneList>
+                        <ns3:Phone>
+                            <ns3:PhoneType>home</ns3:PhoneType>
+                            <ns3:PhoneCountryCode>1</ns3:PhoneCountryCode>
+                            <ns3:PhoneAreaCode>555</ns3:PhoneAreaCode>
+                            <ns3:PhoneNumber>5555555</ns3:PhoneNumber>
+                            <ns3:PhoneExtensionNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:PhoneExtensionNumber>
+                        </ns3:Phone>
+                    </ns3:PhoneList>
+                    <ns3:EmailAddressEntryList>
+                        <ns3:EmailAddressEntry>
+                            <ns3:EmailAddress>ekreft@expedia.com</ns3:EmailAddress>
+                        </ns3:EmailAddressEntry>
+                    </ns3:EmailAddressEntryList>
+                    <ns3:AddressList>
+                        <ns3:Address>
+                            <ns3:AddressType>unspecified</ns3:AddressType>
+                            <ns3:CompanyNameAddressLine xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:CompanyNameAddressLine>
+                            <ns3:FirstAddressLine>123 Main</ns3:FirstAddressLine>
+                            <ns3:SecondAddressLine xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:SecondAddressLine>
+                            <ns3:ThirdAddressLine xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:ThirdAddressLine>
+                            <ns3:FourthAddressLine xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:FourthAddressLine>
+                            <ns3:FifthAddressLine xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ns3:FifthAddressLine>
+                            <ns3:CityName>Chicago</ns3:CityName>
+                            <ns3:ProvinceName>IL</ns3:ProvinceName>
+                            <ns3:PostalCode>60657</ns3:PostalCode>
+                            <ns3:CountryAlpha2Code>US</ns3:CountryAlpha2Code>
+                        </ns3:Address>
+                    </ns3:AddressList>
+                </ns3:ContactInformation>
+                <ns3:ContactEmailPreferenceType>unspecified</ns3:ContactEmailPreferenceType>
+            </ns3:ContactPerson>
+            <ns3:RemarkInfoRequestList>
+                <ns3:RemarkInfoRequest>
+                    <ns3:RemarkType>General</ns3:RemarkType>
+                    <ns3:NamedRemarkList>
+                        <ns3:NamedRemark>
+                            <ns3:Name>UDID1</ns3:Name>
+                            <ns3:Value>ekreft@expedia.com</ns3:Value>
+                        </ns3:NamedRemark>
+                        <ns3:NamedRemark>
+                            <ns3:Name>UDID2</ns3:Name>
+                            <ns3:Value>1071349697/236742</ns3:Value>
+                        </ns3:NamedRemark>
+                        <ns3:NamedRemark>
+                            <ns3:Name>UDID5</ns3:Name>
+                            <ns3:Value>01/AP DOM/E0/70201/0</ns3:Value>
+                        </ns3:NamedRemark>
+                        <ns3:NamedRemark>
+                            <ns3:Name>UDID42</ns3:Name>
+                            <ns3:Value>USD0.00///</ns3:Value>
+                        </ns3:NamedRemark>
+                        <ns3:NamedRemark>
+                            <ns3:Name>UDID49</ns3:Name>
+                            <ns3:Value>LANG ID 1033</ns3:Value>
+                        </ns3:NamedRemark>
+                    </ns3:NamedRemarkList>
+                </ns3:RemarkInfoRequest>
+                <ns3:RemarkInfoRequest>
+                    <ns3:RemarkType>General</ns3:RemarkType>
+                    <ns3:FormattedRemarkText>VALIDATING CARRIER IS AA</ns3:FormattedRemarkText>
+                </ns3:RemarkInfoRequest>
+                <ns3:RemarkInfoRequest>
+                    <ns3:RemarkType>Invoice</ns3:RemarkType>
+                    <ns3:FormattedRemarkText>0211000</ns3:FormattedRemarkText>
+                </ns3:RemarkInfoRequest>
+            </ns3:RemarkInfoRequestList>
+        </ns3:DocumentationRequest>
+    </ns2:Configuration>
+    <ns2:FormOfPaymentInstructions>
+        <ns3:FormOfPaymentDetails>
+            <ns3:PaymentInstrumentToken>67C07AD6-AC9F-43A5-84C5-48FD8C15C2B7</ns3:PaymentInstrumentToken>
+        </ns3:FormOfPaymentDetails>
+        <ns3:PayThrough>PaymentInstrument</ns3:PayThrough>
+    </ns2:FormOfPaymentInstructions>
+    <ns2:AdditionalBookingInstructions>
+        <ns2:PriceToleranceInstructions>
+            <ns3:ReductionUpto>0.06</ns3:ReductionUpto>
+            <ns3:IncreaseUpto>0.06</ns3:IncreaseUpto>
+        </ns2:PriceToleranceInstructions>
+        <ns2:ScheduleToleranceInstructions>
+            <ns3:ToleranceInMinutes>0</ns3:ToleranceInMinutes>
+        </ns2:ScheduleToleranceInstructions>
+    </ns2:AdditionalBookingInstructions>
+</PreparePurchaseRequestType>

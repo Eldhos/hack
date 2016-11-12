@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:GetDetailsResponse xmlns = "urn:expedia:supply:provider:air:v1" xmlns:ns2 = "urn:expedia:supply:provider:air:v1:getdetails">
+    <ns2:ProductDetailsList>
+        <ProductDetails>
+            <ProviderContext>
+                <ProviderCode>sabre</ProviderCode>
+            </ProviderContext>
+            <Itinerary>
+                <OriginDestinationList>
+                    <OriginDestination>
+                        <SegmentList>
+                            <Segment>
+                                <CarrierCode>EK</CarrierCode>
+                                <FlightNumber>202</FlightNumber>
+                                <DepartureAirportCode>JFK</DepartureAirportCode>
+                                <ArrivalAirportCode>DXB</ArrivalAirportCode>
+                                <DepartureDateTime>
+                                    <DateTime>2014-11-04T23:00:00.000+05:30</DateTime>
+                                    <OffsetMinutes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                                </DepartureDateTime>
+                                <ArrivalDateTime>
+                                    <DateTime>2014-11-05T20:30:00.000+05:30</DateTime>
+                                    <OffsetMinutes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                                </ArrivalDateTime>
+                                <SegmentBookingCode>S</SegmentBookingCode>
+                                <AccumulatedDuration>P0Y0M0DT12H30M0.000S</AccumulatedDuration>
+                                <LegList>
+                                    <Leg>
+                                        <DepartureAirportCode>JFK</DepartureAirportCode>
+                                        <ArrivalAirportCode>DXB</ArrivalAirportCode>
+                                        <DepartureDateTime>
+                                            <DateTime>2014-11-04T23:00:00.000+05:30</DateTime>
+                                            <OffsetMinutes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                                        </DepartureDateTime>
+                                        <ArrivalDateTime>
+                                            <DateTime>2014-11-05T20:30:00.000+05:30</DateTime>
+                                            <OffsetMinutes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                                        </ArrivalDateTime>
+                                        <FlightEquipmentCode>388</FlightEquipmentCode>
+                                        <ElapsedDuration>P0Y0M0DT12H30M0.000S</ElapsedDuration>
+                                        <Distance>
+                                            <Amount>6846</Amount>
+                                            <DistanceUnit>miles</DistanceUnit>
+                                        </Distance>
+                                        <DepartureTerminal>TERMINAL 4</DepartureTerminal>
+                                        <ArrivalTerminal>TERMINAL 3</ArrivalTerminal>
+                                    </Leg>
+                                </LegList>
+                            </Segment>
+                            <Segment>
+                                <CarrierCode>EK</CarrierCode>
+                                <FlightNumber>512</FlightNumber>
+                                <DepartureAirportCode>DXB</DepartureAirportCode>
+                                <ArrivalAirportCode>DEL</ArrivalAirportCode>
+                                <DepartureDateTime>
+                                    <DateTime>2014-11-05T22:00:00.000+05:30</DateTime>
+                                    <OffsetMinutes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                                </DepartureDateTime>
+                                <ArrivalDateTime>
+                                    <DateTime>2014-11-06T02:35:00.000+05:30</DateTime>
+                                    <OffsetMinutes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                                </ArrivalDateTime>
+                                <SegmentBookingCode>S</SegmentBookingCode>
+                                <AccumulatedDuration>P0Y0M0DT15H35M0.000S</AccumulatedDuration>
+                                <LegList>
+                                    <Leg>
+                                        <DepartureAirportCode>DXB</DepartureAirportCode>
+                                        <ArrivalAirportCode>DEL</ArrivalAirportCode>
+                                        <DepartureDateTime>
+                                            <DateTime>2014-11-05T22:00:00.000+05:30</DateTime>
+                                            <OffsetMinutes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                                        </DepartureDateTime>
+                                        <ArrivalDateTime>
+                                            <DateTime>2014-11-06T02:35:00.000+05:30</DateTime>
+                                            <OffsetMinutes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                                        </ArrivalDateTime>
+                                        <FlightEquipmentCode>773</FlightEquipmentCode>
+                                        <ElapsedDuration>P0Y0M0DT3H5M0.000S</ElapsedDuration>
+                                        <Distance>
+                                            <Amount>1368</Amount>
+                                            <DistanceUnit>miles</DistanceUnit>
+                                        </Distance>
+                                        <DepartureTerminal>TERMINAL 3</DepartureTerminal>
+                                        <ArrivalTerminal>TERMINAL 3</ArrivalTerminal>
+                                    </Leg>
+                                </LegList>
+                            </Segment>
+                        </SegmentList>
+                    </OriginDestination>
+                </OriginDestinationList>
+            </Itinerary>
+            <DetailsPurchaseConstruct xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+            <TravelerFareMapList>
+                <TravelerFareMap>
+                    <TravelerType>adult</TravelerType>
+                    <TravelerFareType>adult</TravelerFareType>
+                </TravelerFareMap>
+                <TravelerFareMap>
+                    <TravelerType>adult</TravelerType>
+                    <TravelerFareType>adult</TravelerFareType>
+                </TravelerFareMap>
+                <TravelerFareMap>
+                    <TravelerType>adult</TravelerType>
+                    <TravelerFareType>child</TravelerFareType>
+                </TravelerFareMap>
+            </TravelerFareMapList>
+            <FareList>
+                <Fare>
+                    <TravelerFareType>adult</TravelerFareType>
+                    <FareCalculation>NYC EK X/DXB EK DEL Q NYCDEL359.00 410.00NUC769.00END ROE1.00 XFJFK4.5</FareCalculation>
+                    <TotalCurrencyAmount>
+                        <Amount>49493</Amount>
+                        <CurrencyCode>INR</CurrencyCode>
+                    </TotalCurrencyAmount>
+                    <BaseCurrencyAmount>
+                        <Amount>46765</Amount>
+                        <CurrencyCode>INR</CurrencyCode>
+                    </BaseCurrencyAmount>
+                    <TaxesCurrencyAmount>
+                        <Amount>2728</Amount>
+                        <CurrencyCode>INR</CurrencyCode>
+                    </TaxesCurrencyAmount>
+                    <TaxDetailsList>
+                        <TaxDetails>
+                            <Amount>1065</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <TaxCode>US2</TaxCode>
+                            <TaxDescriptionString>US INTERNATIONAL TRANSPORTATIO</TaxDescriptionString>
+                        </TaxDetails>
+                        <TaxDetails>
+                            <Amount>340</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <TaxCode>AY</TaxCode>
+                            <TaxDescriptionString>US SECURITY FEE</TaxDescriptionString>
+                        </TaxDetails>
+                        <TaxDetails>
+                            <Amount>1049</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <TaxCode>IN2</TaxCode>
+                            <TaxDescriptionString>USER DEVELOPMENT FEE INTL ARRI</TaxDescriptionString>
+                        </TaxDetails>
+                        <TaxDetails>
+                            <Amount>274</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <TaxCode>XF</TaxCode>
+                            <TaxDescriptionString>PASSENGER FACILITY CHARGES</TaxDescriptionString>
+                        </TaxDetails>
+                    </TaxDetailsList>
+                    <FareComponentList>
+                        <FareComponent>
+                            <DepartureLocationCode>NYC</DepartureLocationCode>
+                            <ArrivalLocationCode>DEL</ArrivalLocationCode>
+                            <FareBasisCode>UKOWUS1</FareBasisCode>
+                            <FareRulesText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>RULE APPLICATION AND OTHER CONDITIONS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>50</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NOTE - THE FOLLOWING TEXT IS INFORMATIONAL AND NOT VALIDATED FOR AUTOPRICING. SPECIAL EXCURSION FARES FROM AREA 01 TO AREA 2/3 APPLICATION AREA THESE FARES APPLY FROM AREA 1 TO AREA 2/AREA 3. CLASS OF SERVICE THESE FARES APPLY FOR ECONOMY CLASS SERVICE. TYPES OF TRANSPORTATION THIS RULE GOVERNS ONE-WAY AND ROUND-TRIP FARES. FARES GOVERNED BY THIS RULE CAN BE USED TO CREATE ONE-WAY/ROUND-TRIP/CIRCLE-TRIP/OPEN-JAW JOURNEYS. CAPACITY LIMITATIONS THE CARRIER SHALL LIMIT THE NUMBER OF PASSENGERS CARRIED ON ANY ONE FLIGHT AT FARES GOVERNED BY THIS RULE AND SUCH FARES WILL NOT NECESSARILY BE AVAILABLE ON ALL FLIGHTS. THE NUMBER OF SEATS, WHICH THE CARRIER SHALL MAKE AVAILABLE ON A GIVEN FLIGHT, WILL BE DETERMINED BY THE CARRIER'S BEST JUDGEMENT.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>ELIGIBILITY</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>01</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO ELIGIBILITY REQUIREMENTS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>DAY/TIME</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>02</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO DAY/TIME TRAVEL RESTRICTIONS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>SEASONALITY</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>03</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>PERMITTED 14MAY THROUGH 07JUN OR 20JUL THROUGH 10DEC ON THE FIRST INTERNATIONAL SECTOR. SEASON IS BASED ON DATE OF ORIGIN.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>FLIGHT APPLICATION</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>04</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>THE FARE COMPONENT MUST NOT BE ON ONE OR MORE OF THE FOLLOWING EK FLIGHTS 6200 THROUGH 6203 EK FLIGHTS 6220 THROUGH 6221 SA FLIGHTS 7000 THROUGH 7699 BA FLIGHTS 6200 THROUGH 6449 B6 FLIGHTS 3000 THROUGH 3999. AND IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN UNITED STATES THEN THAT TRAVEL MUST BE ON ONE OR MORE OF THE FOLLOWING ANY EK FLIGHT OPERATED BY B6 ANY AS FLIGHT OPERATED BY AS ANY AS FLIGHT OPERATED BY QX ANY VX FLIGHT OPERATED BY VX ANY B6 FLIGHT OPERATED BY B6 AM FLIGHTS 001 THROUGH 3999 ANY DL FLIGHT OPERATED BY DL ANY DL FLIGHT OPERATED BY OO ANY DL FLIGHT OPERATED BY 9E ANY DL FLIGHT OPERATED BY S5 ANY DL FLIGHT OPERATED BY RP ANY DL FLIGHT OPERATED BY CP ANY DL FLIGHT OPERATED BY G7 ANY DL FLIGHT OPERATED BY EV HA FLIGHTS 01 THROUGH 1899. AND THE FARE COMPONENT MUST INCLUDE TRAVEL BETWEEN AREA 1 AND DXB ON ONE OR MORE OF THE FOLLOWING ANY EK FLIGHT OPERATED BY EK. AND IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN TICKETED POINTS AFRICA THEN THAT TRAVEL MUST BE ON ONE OR MORE OF THE FOLLOWING ANY SA FLIGHT ANY BA FLIGHT. AND IF THE FARE COMPONENT INCLUDES TRAVEL BETWEEN DXB AND AREA 2 THEN THAT TRAVEL MUST BE ON ONE OR MORE OF THE FOLLOWING ANY EK FLIGHT OPERATED BY EK ANY EK FLIGHT OPERATED BY WY ANY FZ FLIGHT. AND IF THE FARE COMPONENT INCLUDES TRAVEL BETWEEN DXB AND AREA 3 THEN THAT TRAVEL MUST BE ON ONE OR MORE OF THE FOLLOWING ANY EK FLIGHT OPERATED BY EK ANY 4Q FLIGHT ANY FZ FLIGHT. AND IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN AREA 3 THEN THAT TRAVEL MUST BE ON ONE OR MORE OF THE FOLLOWING ANY EK FLIGHT OPERATED BY EK ANY Z5 FLIGHT.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>ADVANCE RESERVATIONS/TICKETING</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>05</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>CONFIRMED RESERVATIONS ARE REQUIRED FOR ALL SECTORS. WHEN RESERVATIONS ARE MADE AT LEAST 26 DAYS BEFORE DEPARTURE, TICKETING MUST BE COMPLETED WITHIN 7 DAYS AFTER RESERVATIONS ARE MADE. OR - CONFIRMED RESERVATIONS ARE REQUIRED FOR ALL SECTORS. WHEN RESERVATIONS ARE MADE AT LEAST 10 DAYS BEFORE DEPARTURE, TICKETING MUST BE COMPLETED WITHIN 72 HOURS AFTER RESERVATIONS ARE MADE. OR - CONFIRMED RESERVATIONS ARE REQUIRED FOR ALL SECTORS. WHEN RESERVATIONS ARE MADE AT LEAST 6 DAYS BEFORE DEPARTURE, TICKETING MUST BE COMPLETED WITHIN 24 HOURS AFTER RESERVATIONS ARE MADE. OR - CONFIRMED RESERVATIONS ARE REQUIRED FOR ALL SECTORS. WHEN RESERVATIONS ARE MADE AT LEAST 24 HOURS BEFORE DEPARTURE, TICKETING MUST BE COMPLETED WITHIN 6 HOURS AFTER RESERVATIONS ARE MADE. OR - CONFIRMED RESERVATIONS ARE REQUIRED FOR ALL SECTORS. TICKETING MUST BE COMPLETED WITHIN 4 HOURS AFTER RESERVATIONS ARE MADE. NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. EK RESERVES THE RIGHT TO CANCEL ANY PNR WHERE ITINERARY DO NOT COMPLY WITH THE RESERVATION BOOKING CODE / RBD/ ----- IF A TICKET IS USED OUT OF SEQUENCE EK RESERVES THE RIGHT TO CANCEL ANY PNR OR INVALIDATE THE REMAINING FLIGHT COUPONS. ------ IF A PASSENGER FAILS TO TRAVEL ON A SECTOR BOOKED EK RESERVES THE RIGHT TO CANCEL THE REMAINING EK SECTOR . ------- RESERVATIONS AND TICKETING MUST BE MADE BY AUTHORISED BOOKING/TICKETING AGENTS OR WILL BE CANCELLED. PASSENGER TELEPHONE NOS MUST BE INCLUDED IN THE PNR. TICKETS MUST BE ISSUED ON EK AND REPORTED THROUGH APPROVED REPORTING CHANNELS -----------------------</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>MINIMUM STAY</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>06</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO MINIMUM STAY REQUIREMENTS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>MAXIMUM STAY</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>07</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO MAXIMUM STAY REQUIREMENTS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>STOPOVERS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>08</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>2 STOPOVERS PERMITTED ON THE PRICING UNIT AT USD 100.00 EACH 1 IN DXB 1 IN MIL PER PASSENGER. INFANT IS FREE. NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. STOPOVER FEE APPLIES TO ADULT/CHILD ONLY. INFANT DISCOUNTS MAY BE APPLIED TO INFANTS UNDER 2 YEARS OF AGE TRAVELLING WITHOUT A SEAT.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>TRANSFERS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>09</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>UNLIMITED TRANSFERS PERMITTED ON THE PRICING UNIT. FARE BREAK SURFACE SECTORS NOT PERMITTED ON THE FARE COMPONENT. EMBEDDED SURFACE SECTORS PERMITTED ON THE FARE COMPONENT WITHIN EUROPE. NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. TRANSFERS AS PER THE ATTACHED ROUTE MAP</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>COMBINATIONS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>10</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>SINGLE/DOUBLE OPEN JAWS/ROUND TRIPS/CIRCLE TRIPS NOT PERMITTED. END-ON-END END-ON-END COMBINATIONS NOT PERMITTED. VALIDATE ALL FARE COMPONENTS. SIDE TRIPS PERMITTED WITH NO RESTRICTIONS. PROVIDED - COMBINATIONS ARE FOR CARRIER EK. OTHERWISE END-ON-END COMBINATIONS PERMITTED. VALIDATE ALL FARE COMPONENTS. SIDE TRIPS PERMITTED WITH NO RESTRICTIONS. TRAVEL MUST BE VIA THE POINT OF COMBINATION.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>BLACKOUT DATES</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>11</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO BLACKOUT DATES APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>SURCHARGES</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>12</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>FARE RULE NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. GENERAL RULE APPLIES GENERAL RULE - APPLY UNLESS OTHERWISE SPECIFIED IF INFANT WITHOUT A SEAT PSGR UNDER 2. OR - INCLUSIVE TOUR INFANT WITHOUT A SEAT PSGR UNDER 2. OR - CONTRACT BULK INFANT PSGR UNDER 2. THERE IS NO FUEL SURCHARGE PER ANY PASSENGER. ORIGINATING INDIA - FUEL SURCHARGE OF USD 152.00 PER FARE COMPONENT WILL BE ADDED TO THE APPLICABLE FARE PER ANY PASSENGER. ORIGINATING UNITED STATES - FUEL SURCHARGE OF USD 359.00 PER FARE COMPONENT WILL BE ADDED TO THE APPLICABLE FARE PER ANY PASSENGER.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>ACCOMPANIED TRAVEL</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>13</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>ACCOMPANIED TRAVEL NOT REQUIRED.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>TRAVEL RESTRICTIONS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>14</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO TRAVEL DATE RESTRICTIONS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>SALES RESTRICTIONS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>15</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>TICKETS MAY NOT BE SOLD IN SUDAN.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>PENALTIES</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>16</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>CANCELLATIONS BEFORE DEPARTURE CHARGE USD 200.00 FOR REFUND. BEFORE DEPARTURE CHARGE USD 400.00 FOR NO-SHOW. NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. FAILURE TO OCCUPY A RESERVED SEAT ON ANY SEGMENT OF THE ITINERARY WILL RESULT IN ALL SUBSEQUENT SEGMENTS OF THE ITINERARY BEING CANCELLED.IN SUCH CASES REFUND WILL INCUR A CHARGE OF USD 400 ------------- IN CASE OF NO-SHOW ONLY ONE FEE IS TO BE CHARGED I.E. EITHER THE NO-SHOW FEE OR THE REFUND FEE WHICHEVER IS HIGHER AFTER DEPARTURE TICKET IS NON-REFUNDABLE. CHANGES ANY TIME CHARGE USD 200.00 FOR REISSUE. ANY TIME CHARGE USD 200.00 FOR REVALIDATION. NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. USD200 APPLIES IN CASE OF DATE CHANGE INCLUDING REVALIDATION OF INTERLINE SECTORS IF ANY. USD200 APPLIES IN CASE OF REROUTE OF ITINERARY AND CHANGE IN FARE OR APPLICABLE RBD. BEFORE DEPARTURE CHARGE USD 400.00 FOR NO-SHOW. NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. FAILURE TO OCCUPY A RESERVED SEAT ON ANY SEGMENT OF THE ITINERARY WILL RESULT IN ALL SUBSEQUENT SEGMENTS OF THE ITINERARY BEING CANCELLED.IN SUCH CASES REISSUE /REVALIDATION WILL INCUR A CHARGE OF USD 400 ------------- IN CASE OF NO-SHOW ONLY ONE FEE IS TO BE CHARGED I.E. EITHER THE NO-SHOW FEE OR THE RE-ISSUE FEE WHICHEVER IS HIGHER AFTER DEPARTURE CHARGE USD 800.00 FOR NO-SHOW. NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. FAILURE TO OCCUPY A RESERVED SEAT ON ANY SEGMENT OF THE ITINERARY WILL RESULT IN ALL SUBSEQUENT SEGMENTS OF THE ITINERARY BEING CANCELLED.IN SUCH CASES REISSUE /REVALIDATION WILL INCUR A CHARGE OF USD 800. ------------- IN CASE OF NO-SHOW ONLY ONE FEE IS TO BE CHARGED I.E. EITHER THE NO-SHOW FEE OR THE RE-ISSUE FEE WHICHEVER IS HIGHER NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. CHANGES BEFORE DEPARTURE ---- IN THE EVENT OF VOLUNTARY CHANGES TO ANY FLIGHT THE FARES AND CHARGES FOR THE PASSENGER JOURNEY SHALL BE RECALCULATED IN ACCORDANCE WITH THE FARES AND CHARGES IN EFFECT ON THE DATE ON WHICH THE CHANGE IS MADE AND IS REFLECTED ON THE TICKET. -THE CHANGE FEE APPLIES PER TRANSACTION IF ANY. -THE CHANGE FEE APPLIES PER FARE COMPONENT IF ANY. WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ANY OF THE CHANGED FARE COMPONENTS WILL APPLY. -PENALTY APPLIES TO ADULT/CHILD AND INFANT OCCUPYING A SEAT. -WAIVED FOR DEATH OF PASSENGER OR FAMILY MEMBER. A COPY OF A VALID DEATH CERTIFICATE ISSUED BY A COMPETENT MEDICAL AUTHORITY IS REQUIRED. FAMILY MEMBERS AS DEFINED IN EK CONDITIONS OF CARRIAGE OR PASSENGER AIRLINE TARIFF BOOK. -SAME DATE/SAME FLIGHT SKYWARDS UPGRADES SHOULD NOT BE CHARGED FOR CHANGES. -PENALTY FEE APPLIES IN ADDITION TO ANY FARE DIFFERENCE CAUSED DUE TO VOLUNTARY CHANGE OF RBD/SEASONALITY/DAY OF WEEK OF APPLICATION/ FLIGHT OR BLACKOUTS. -REBOOKING MUST BE DONE PRIOR TO THE ORIGINAL DEPARTURE. -REVALIDATION MUST OCCUR AFTER EVERY CHANGE IN BOOKING. AFTER DEPARTURE ----- -THE CHANGE FEE APPLIES PER TRANSACTION IF ANY. -THE CHANGE FEE APPLIES PER FARE COMPONENT IF ANY. WHEN MORE THAN ONE FARE COMPONENT IS CHANGED THE HIGHEST PENALTY OF ANY OF THE CHANGED FARE COMPONENTS WILL APPLY. -PENALTY APPLIES TO ADULT/CHILD AND INFANT OCCUPYING A SEAT. -WAIVED FOR DEATH OF PASSENGER OR FAMILY MEMBER. A COPY OF A VALID DEATH CERTIFICATE ISSUED BY A COMPETENT MEDICAL AUTHORITY IS REQUIRED. FAMILY MEMBERS AS DEFINED IN EK CONDITIONS OF CARRIAGE OR PASSENGER AIRLINE TARIFF BOOK. -SAME DATE/SAME FLIGHT SKYWARDS UPGRADES SHOULD NOT BE CHARGED FOR CHANGES. -PENALTY FEE APPLIES IN ADDITION TO ANY FARE DIFFERENCE CAUSED DUE TO VOLUNTARY CHANGE OF RBD/SEASONALITY/DAY OF WEEK OF APPLICATION/ FLIGHT OR BLACKOUTS. -REBOOKING MUST BE DONE PRIOR TO THE ORIGINAL DEPARTURE. -REVALIDATION MUST OCCUR AFTER EVERY CHANGE IN BOOKING. ------------------------------------------------- RE-ISSUES ONLY PERMITTED TO FARE OF EQUIVALENT OR HIGHER VALUE. -------------------------------------------------- UPGRADES - THE BELOW IS ONLY APPLICABLE IF CHANGES ARE PERMITTED -AT ANY TIME WITHIN TICKET VALIDITY THE FARE CAN BE RE-ISSUED TO ANY HIGHER FARE IN THE SAME CABIN RECALCULATED FROM THE POINT OF ORIGIN AT A CHARGE AS APPLICABLE PER CHANGE PROVIDED THE CONDITIONS OF THE HIGHER FARE HAVE BEEN MET AND THE APPLICABLE DIFFERENCE IN FARE IS COLLECTED. CHARGE APPLIES PER PASSENGER. PENALTY DOES NOT APPLY TO INFANT WITHOUT A SEAT. IF THE RE-ISSUED TICKET IS SUBSEQUENTLY CANCELLED THE ORIGINAL PENALTY WILL APPLY. -AT ANYTIME WITHIN THE TICKET VALIDITY FARES CAN BE UPGRADED TO ANY FARE IN A HIGHER CABIN RECALCULATED FROM POINT OF ORIGIN PROVIDED THE CONDITIONS OF THE HIGHER CABIN FARE HAVE BEEN MET. REISSUE FEE WILL BE WAIVED IN THIS CASE. IF THE UPGRADED TICKET IS SUBSEQUENTLY CANCELLED THE ORIGINAL PENALTY WILL APPLY. ------------------------------------------------- CANCELLATION BEFORE DEPARTURE - 1.WHEN COMBINED WITH A NON-REFUNDABLE FARE. -DEDUCT THE RETURN AMOUNT OF THE NON-REFUNDABLE FARE AND -THE REFUND PENALTY OF THE REFUNDABLE FARE. 2.WHEN COMBINED WITH A REFUNDABLE FARE. -APPLY THE HIGHER OF THE TWO PENALTIES. 3.PENALITY APPLIES TO ADULT/CHILD AND INFANT OCCUPYING A SEAT. 4.WAIVED FOR DEATH OF PASSENGER OR FAMILY MEMBER. A COPY OF A VALID DEATH CERTIFICATE ISSUED BY A COMPETENT MEDICAL AUTHORITY IS REQUIRED. FAMILY MEMBERS AS DEFINED IN EK CONDITIONS OF CARRIAGE OR PASSENGER AIRLINE TARIFF BOOK. -------------------------------------------------- CANCELLATION AFTER DEPARTURE - 1.WHEN COMBINED WITH A NON-REFUNDABLE FARE AND IF A.THE NON-REFUNDABLE FARE IS USED ON THE OUTBOUND FARE COMPONENT -DEDUCT THE ONE-WAY FARE IN THE SAME OR HIGHER RBD FOR THE ORIGIN DESTINATION PLUS REFUND PENALTY OF THE REFUNDABLE FARE. B.THE NON-REFUNDABLE FARE IS A PART OF THE INBOUND FARE COMPONENT -NO REFUND APPLIES. 2.WHEN COMBINED WITH A REFUNDABLE FARE -DEDUCT THE ONE-WAY FARE IN THE SAME OR HIGHER RBD FOR THE FLOWN PORTION. -IF TRAVEL ON THE INBOUND FARE COMPONENT HAS COMMENCED NO REFUND APPLIES. 3.PENALITY APPLIES TO ADULT/CHILD AND INFANT OCCUPYING A SEAT. 4.WAIVED FOR DEATH OF PASSENGER OR FAMILY MEMBER. A COPY OF A VALID DEATH CERTIFICATE ISSUED BY A COMPETENT MEDICAL AUTHORITY IS REQUIRED. FAMILY MEMBERS AS DEFINED IN EK CONDITIONS OF CARRIAGE OR PASSENGER AIRLINE TARIFF BOOK. 5.REFUND NOT APPLICABLE ON VOLUNTARY DOWNGRADES. 6.REFUND IS NOT APPLICABLE ON REMAINING FLIGHT COUPONS IF THE TICKET IS UTILIZED OUT OF SEQUENCE.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>HIP/MILEAGE EXCEPTIONS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>17</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>THE HIGHER INTERMEDIATE POINT RULE DOES NOT APPLY FOR CONNECTIONS. AND - THE HIGHER INTERMEDIATE POINT RULE DOES NOT APPLY FOR STOPOVERS. NOTE - SURCHARGE AND EXCESS MILEAGE CAN BE IGNORED. HIGHER INTERMEDIATE POINT RULE DOES NOT APPLY FOR STOPOVERS/CONNECTIONS. -------------------------------------------------- THESE FARES SHOULD NOT BE COMPARED/CHECKED WITH THE FOLLOWING- - HIGH IMMEDIATE FARE       -HIF- - CIRCLE TRIP MINIMUM CHECK -CTM-</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>TICKET ENDORSEMENTS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>18</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>THE ORIGINAL AND THE REISSUED TICKET MUST BE ANNOTATED - NON-END/SKYWARDS SAVER - IN THE ENDORSEMENT BOX.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>CHILDREN DISCOUNTS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>19</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>CNN/ACCOMPANIED CHILD PSGR 2-11 - CHARGE 75 PERCENT OF THE FARE. TICKETING CODE - BASE FARE CODE PLUS CH. MUST BE ACCOMPANIED ON ALL FLIGHTS IN THE SAME COMPARTMENT BY ADULT PSGR 18 OR OLDER. OR - INF/INFANT WITHOUT A SEAT PSGR UNDER 2 - CHARGE 10 PERCENT OF THE FARE. TICKETING CODE - BASE FARE CODE PLUS IN. MUST BE ACCOMPANIED ON ALL FLIGHTS IN THE SAME COMPARTMENT BY ADULT PSGR 18 OR OLDER. NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. IN THE EVENT THAT AN INFANT REACHES HIS/HER SECOND BIRTHDAY AFTER COMMENCEMENT OF TRAVEL A SEAT MUST BE BOOKED FOR THE REMAINING SECTORS OF THE JOURNEY AND APPROPRIATE HALF INFANT AND HALF CHILD FARE MUST BE CHARGED FOR THESE TICKETS. OR - INS/INFANT WITH A SEAT PSGR UNDER 2 - CHARGE 75 PERCENT OF THE FARE. TICKETING CODE - BASE FARE CODE PLUS CH. MUST BE ACCOMPANIED ON ALL FLIGHTS IN THE SAME COMPARTMENT BY ADULT PSGR 18 OR OLDER. OR - UNN/UNACCOMPANIED CHILD PSGR 5-11 - CHARGE 100 PERCENT OF THE FARE. TICKETING CODE - BASE FARE CODE PLUS CH.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>TOUR CONDUCTOR DISCOUNTS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>20</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>TUR/TOUR CONDUCTOR PSGR - NO DISCOUNT.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>AGENT DISCOUNTS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>21</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>AGT/AGENT PSGR - NO DISCOUNT.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>ALL OTHER DISCOUNTS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>22</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NOTE - TEXT BELOW NOT VALIDATED FOR AUTOPRICING. NO OTHER DISCOUNTS PERMITTED</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>MISCELLANEOUS PROVISIONS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>23</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO PROVISIONS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>FARE BY RULE</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>25</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NOT APPLICABLE.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>GROUPS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>26</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO GROUP PROVISIONS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>TOURS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>27</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO TOUR PROVISIONS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>VISIT ANOTHER COUNTRY</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>28</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO VISIT ANOTHER COUNTRY PROVISIONS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>DEPOSITS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>29</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NO DEPOSIT PROVISIONS APPLY.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>VOLUNTARY CHANGES</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>31</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>ENTER RD*31 OR RD?LINE NUM?*31 FOR VOLUNTARY CHGS.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>VOLUNTARY REFUNDS</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>33</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>CHECK CATEGORY 16 OR CONTACT CARRIER FOR DETAILS.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>NEGOTIATED FARES</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>35</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NOT APPLICABLE.</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                                <AirFareRuleTaggedText>
+                                    <AirFareRuleTagString>INTERNATIONAL CONSTRUCTION</AirFareRuleTagString>
+                                    <AirFareRuleCategoryCode>IC</AirFareRuleCategoryCode>
+                                    <AirFareRuleString>NOT A CONSTRUCTED FARE</AirFareRuleString>
+                                </AirFareRuleTaggedText>
+                            </FareRulesText>
+                        </FareComponent>
+                    </FareComponentList>
+                </Fare>
+                <Fare>
+                    <TravelerFareType>child</TravelerFareType>
+                    <FareCalculation>NYC EK X/DXB EK DEL Q NYCDEL359.00 307.50NUC666.50END ROE1.00 XFJFK4.5</FareCalculation>
+                    <TotalCurrencyAmount>
+                        <Amount>43293</Amount>
+                        <CurrencyCode>INR</CurrencyCode>
+                    </TotalCurrencyAmount>
+                    <BaseCurrencyAmount>
+                        <Amount>40565</Amount>
+                        <CurrencyCode>INR</CurrencyCode>
+                    </BaseCurrencyAmount>
+                    <TaxesCurrencyAmount>
+                        <Amount>2728</Amount>
+                        <CurrencyCode>INR</CurrencyCode>
+                    </TaxesCurrencyAmount>
+                    <TaxDetailsList>
+                        <TaxDetails>
+                            <Amount>1065</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <TaxCode>US2</TaxCode>
+                            <TaxDescriptionString>US INTERNATIONAL TRANSPORTATIO</TaxDescriptionString>
+                        </TaxDetails>
+                        <TaxDetails>
+                            <Amount>340</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <TaxCode>AY</TaxCode>
+                            <TaxDescriptionString>US SECURITY FEE</TaxDescriptionString>
+                        </TaxDetails>
+                        <TaxDetails>
+                            <Amount>1049</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <TaxCode>IN2</TaxCode>
+                            <TaxDescriptionString>USER DEVELOPMENT FEE INTL ARRI</TaxDescriptionString>
+                        </TaxDetails>
+                        <TaxDetails>
+                            <Amount>274</Amount>
+                            <CurrencyCode>INR</CurrencyCode>
+                            <TaxCode>XF</TaxCode>
+                            <TaxDescriptionString>PASSENGER FACILITY CHARGES</TaxDescriptionString>
+                        </TaxDetails>
+                    </TaxDetailsList>
+                    <FareComponentList>
+                        <FareComponent>
+                            <DepartureLocationCode>NYC</DepartureLocationCode>
+                            <ArrivalLocationCode>DEL</ArrivalLocationCode>
+                            <FareBasisCode>UKOWUS1CH</FareBasisCode>
+                        </FareComponent>
+                    </FareComponentList>
+                </Fare>
+            </FareList>
+            <FareTotal>
+                <TravelerFareType xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:nil = "true"/>
+                <TotalCurrencyAmount>
+                    <Amount>142279.00</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                </TotalCurrencyAmount>
+                <BaseCurrencyAmount>
+                    <Amount>134095.00</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                </BaseCurrencyAmount>
+                <TaxesCurrencyAmount>
+                    <Amount>8184.00</Amount>
+                    <CurrencyCode>INR</CurrencyCode>
+                </TaxesCurrencyAmount>
+            </FareTotal>
+        </ProductDetails>
+    </ns2:ProductDetailsList>
+</ns2:GetDetailsResponse>

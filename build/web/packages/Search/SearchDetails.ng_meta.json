@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "SearchDetails": {
+      "class": "Identifier",
+      "name": "SearchDetails",
+      "moduleUrl": "asset:Search/lib/SearchDetails.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

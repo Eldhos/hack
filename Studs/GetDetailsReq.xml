@@ -1,0 +1,79 @@
+<GetDetailsRequest
+        LgrDiag-ObjectToXmlDeferredLoggable-NodeCreationTime = "0"
+        xmlns:i = "http://www.w3.org/2001/XMLSchema-instance"
+        xmlns = "urn:expedia:supply:provider:air:v1:getdetails">
+    <MessageContext xmlns:d2p1 = "urn:expedia:supply:provider:air:v1">
+        <d2p1:MessageGUID>3caa5887-7204-4294-a87e-c9fdb05d8d86</d2p1:MessageGUID>
+        <d2p1:MessageReference>TPID=1,TUID=1426,EAPID=0</d2p1:MessageReference>
+        <d2p1:DebugTrace>true</d2p1:DebugTrace>
+        <d2p1:ClientHostname>CHELAIRTVAPN02</d2p1:ClientHostname>
+        <d2p1:SpoofID i:nil = "true"></d2p1:SpoofID>
+    </MessageContext>
+    <ProductList xmlns:d2p1 = "urn:expedia:supply:provider:air:v1">
+        <d2p1:Product>
+            <d2p1:ProviderContext>
+                <d2p1:ProviderCode>sabre</d2p1:ProviderCode>
+                <d2p1:ProviderGUID>FD6337D3171241759A2DF3BA0D75D50A</d2p1:ProviderGUID>
+            </d2p1:ProviderContext>
+            <d2p1:RequestedCabinType>coach</d2p1:RequestedCabinType>
+            <d2p1:Itinerary>
+                <d2p1:OriginDestinationList>
+                    <d2p1:OriginDestination>
+                        <d2p1:SegmentList>
+                            <d2p1:Segment>
+                                <d2p1:CarrierCode>UA</d2p1:CarrierCode>
+                                <d2p1:FlightNumber>83</d2p1:FlightNumber>
+                                <d2p1:DepartureAirportCode>DEL</d2p1:DepartureAirportCode>
+                                <d2p1:ArrivalAirportCode>EWR</d2p1:ArrivalAirportCode>
+                                <d2p1:DepartureDateTime>
+                                    <d2p1:DateTime>2016-06-06T23:35:00</d2p1:DateTime>
+                                </d2p1:DepartureDateTime>
+                                <d2p1:ArrivalDateTime>
+                                    <d2p1:DateTime>2016-06-07T05:10:00</d2p1:DateTime>
+                                    <d2p1:OffsetMinutes>480</d2p1:OffsetMinutes>
+                                </d2p1:ArrivalDateTime>
+                                <d2p1:CabinType>coach</d2p1:CabinType>
+                                <d2p1:SegmentBookingCode>S</d2p1:SegmentBookingCode>
+                                <d2p1:SegmentStopCount>0</d2p1:SegmentStopCount>
+                                <d2p1:AccumulatedDuration i:nil = "true"></d2p1:AccumulatedDuration>
+                                <d2p1:SegmentAttributeList i:nil = "true"></d2p1:SegmentAttributeList>
+                                <d2p1:ReportedAvailabilityCount i:nil = "true"></d2p1:ReportedAvailabilityCount>
+                            </d2p1:Segment>
+                        </d2p1:SegmentList>
+                        <d2p1:FareList i:nil = "true"></d2p1:FareList>
+                        <d2p1:FareTotal i:nil = "true"></d2p1:FareTotal>
+                        <d2p1:DepartureMetroCode>DEL</d2p1:DepartureMetroCode>
+                        <d2p1:ArrivalMetroCode>EWR</d2p1:ArrivalMetroCode>
+                    </d2p1:OriginDestination>
+                </d2p1:OriginDestinationList>
+            </d2p1:Itinerary>
+            <d2p1:TravelerFareMapList>
+                <d2p1:TravelerFareMap>
+                    <d2p1:TravelerType>adult</d2p1:TravelerType>
+                    <d2p1:TravelerAge>35</d2p1:TravelerAge>
+                    <d2p1:TravelerFareType>adult</d2p1:TravelerFareType>
+                </d2p1:TravelerFareMap>
+            </d2p1:TravelerFareMapList>
+            <d2p1:PaymentDetailsList i:nil = "true"></d2p1:PaymentDetailsList>
+            <d2p1:ProductAttributeList>
+                <d2p1:ProductAttribute>packageable</d2p1:ProductAttribute>
+            </d2p1:ProductAttributeList>
+        </d2p1:Product>
+    </ProductList>
+    <FareCriteriaList xmlns:d2p1 = "urn:expedia:supply:provider:air:v1">
+        <d2p1:FareCriteria>
+            <d2p1:FareRestrictionList>
+                <d2p1:FareRestriction>unspecified</d2p1:FareRestriction>
+            </d2p1:FareRestrictionList>
+            <d2p1:FareOptionList>
+                <d2p1:FareOption>
+                    <d2p1:FareSecurity>
+                        <d2p1:ProviderAgencyOfficeCode>5MWA</d2p1:ProviderAgencyOfficeCode>
+                        <d2p1:FareAccountNumber i:nil = "true"></d2p1:FareAccountNumber>
+                    </d2p1:FareSecurity>
+                </d2p1:FareOption>
+            </d2p1:FareOptionList>
+            <d2p1:RequestFareRulesText>true</d2p1:RequestFareRulesText>
+        </d2p1:FareCriteria>
+    </FareCriteriaList>
+</GetDetailsRequest>

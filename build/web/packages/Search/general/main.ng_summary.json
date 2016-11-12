@@ -1,0 +1,39 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:newbie/general/proc/GetRequest.dart",
+        "5": false
+      },
+      {
+        "1": "package:http/http.dart",
+        "4": "http",
+        "5": false
+      },
+      {
+        "1": "dart:convert",
+        "4": "convert",
+        "5": false
+      }
+    ],
+    "6": "main.dart"
+  },
+  "type": {
+    "main": {
+      "class": "Identifier",
+      "name": "main",
+      "moduleUrl": "asset:Search/lib/general/main.dart",
+      "prefix": null,
+      "value": null
+    },
+    "myValue": {
+      "class": "Identifier",
+      "name": "myValue",
+      "moduleUrl": "asset:Search/lib/general/main.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}
