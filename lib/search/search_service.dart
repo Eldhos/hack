@@ -7,10 +7,14 @@ import 'package:iHAT/search/adapter/SearchAdapter.dart';
 class SearchService{
 
   List<SearchResult> getSearchResults(SearchDetails searchDetails) {
-    getSearchRequest(searchDetails);
+    String result = getSearchRequest(searchDetails);
     //TODO Sent to host and get response
+    String sabreURL = "http://cheijvasws002:8080/sabreprovideradapter/v2/search";
+
+
+    print(result);
     SearchResult searchResult = new SearchResult();
-    searchResult.price = "Test Price";
+    searchResult.price = result;
     return [searchResult];
     
   }
