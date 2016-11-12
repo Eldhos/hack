@@ -1,5 +1,8 @@
 class SearchDetails{
-	Map<String, String> originDestination;
-	String date;
+	String origin;
+	String destination;
+	String startdate;
+	String returnDate;
+	bool roundTrip;
 	Map<String, num> travelers;
 }

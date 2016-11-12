@@ -1,5 +1,0 @@
-
-
-void printHello(){
-	print("Hellooooooooo");
-}

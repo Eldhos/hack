@@ -1,40 +1,44 @@
 import 'package:angular2/core.dart';
 import 'SearchDetails.dart';
-import 'package:Search/adapter/SearchAdapter.dart';
+import 'package:iHAT/adapter/SearchAdapter.dart';
 
 @Component(
 	selector: "search-form",
 	template: '''
-		<form class="form-inline" (ngSubmit)="search()">
+		<form class="form-horizontal" (ngSubmit)="search()">
 			<div class="form-group">
-				<label>Origin</label>
-				<input [(ngModel)]="origin" placeholder="Origin Name" class="form-control" required ng-control="origin" #org="ngForm">
+				<label for="origin" class="col-sm-2 control-label">Origin</label>
+				<div class="col-sm-2 control-label">
+					<input id="origin" [(ngModel)]="origin" placeholder="Origin Name" class="form-control" required ng-control="origin" #org="ngForm">
+				</div>
 			</div>
 			<div class="form-group">
-				<label>Destination</label>
-				<input [(ngModel)]="destination" placeholder="Destination Name" class="form-control" ng-control="destination" #spy2>
+				<label class="col-sm-2 control-label">Destination</label>
+				<div for="destination" class="col-sm-2 control-label">
+					<input [(ngModel)]="destination" placeholder="Destination Name" class="form-control" required ng-control="destination" #spy2>
+				</div>
 			</div>
 			<div class="form-group">
-				<label>Departure Date</label>
-				<input type="date" [(ngModel)]="departureDate">
+				<label for="departureDate" class="col-sm-2 control-label">Departure Date</label>
+				<div class="col-sm-2 control-label">
+					<input id="departureDate" type="date" [(ngModel)]="departureDate">
+				</div>
 			</div>
 			<div class="form-group">
-				<label>Arrival Date</label>
-				<input type="date" [(ngModel)]="arrivalDate">
-			</div>
+    		<div class="col-sm-offset-2 col-sm-10">
+      	<div class="checkbox">
+        <label>
+          <input [ngModel]="roundTrip" (ngModelChange)="toggleRoundTrip()" type="checkbox"> Round Trip
+        </label>
+      </div>
+    </div>
+  </div>
 			<div>
 				<button  type="submit">Search</button>
 				<button type="submit">Reprice</button>
 				<button type="submit">Purchase</button>
 			</div>
-
-			<div>
-			{{departureDate}}
-			{{arrivalDate}}
-			</div>
-			<div>
-			{{searchRequest}}
-			</div>
+			{{roundTrip}}
 		</form>
 		''',
 	styles: const ['''
@@ -50,24 +54,32 @@ import 'package:Search/adapter/SearchAdapter.dart';
 
 )
 class SearchComponent implements OnInit{
-	SearchDetails searchDetails;
 	String origin;
 	String destination;
-	String departureDate;
-	String arrivalDate;
+	String startDate;
+	String returnDate;
 	String searchRequest;
+	bool roundTrip;
 	bool submitted;
+	String searchResponse;
 
 	void search(){
-		searchRequest =  getSearchRequest(searchDetails);
-
+		SearchDetails searchDetails = new SearchDetails();
+		searchDetails.destination = destination;
+		searchDetails.origin = origin;
+		searchDetails.roundTrip = roundTrip;
+		searchDetails.startdate = startDate;
+		searchDetails.returnDate = null;
+    searchResponse = getSearchRequest(searchDetails);
 	}
 
 
+	void toggleRoundTrip(){
+		roundTrip = !roundTrip;
+	}
 	void ngOnInit(){
 		origin = "";
 		destination="";
-		searchDetails = new SearchDetails();
 		submitted = false;
 
 	}
