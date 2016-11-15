@@ -2,6 +2,7 @@ import 'package:angular2/core.dart';
 import 'SearchDetails.dart';
 import 'package:iHAT/search/search_service.dart';
 import 'package:iHAT/search/SearchResult.dart';
+import 'dart:async';
 
 
 @Component(
@@ -67,14 +68,16 @@ class SearchComponent implements OnInit{
 	String searchResponse;
 	final SearchService searchService;
 	SearchComponent(this.searchService);
-	void search(){
+	Future<Null> search() async {
 		SearchDetails searchDetails = new SearchDetails();
 		searchDetails.destination = destination;
 		searchDetails.origin = origin;
 		searchDetails.roundTrip = roundTrip;
 		searchDetails.startdate = departureDate;
 		searchDetails.returnDate = null;
-    for(SearchResult result in searchService.getSearchResults(searchDetails)) {
+		List<SearchResult> results = await searchService.getSearchResults(searchDetails);
+
+    for(SearchResult result in results) {
 			searchResponse = result.price;
 		}
 	}
