@@ -5,6 +5,7 @@ import 'package:iHAT/search/adapter/SearchAdapter.dart';
 import 'package:http/browser_client.dart';
 import 'package:http/http.dart';
 import 'dart:async';
+import 'dart:io';
 
 @Injectable()
 class SearchService{
@@ -16,12 +17,12 @@ class SearchService{
 
     try {
       response = await browserClient.post(
-          "http://192.168.72.198:8080/sabreprovideradapter/v2/search",
+          "http://localhost:4042/sabreprovideradapter/v2/search",
           headers: {
             'Content-Type': 'application/xml',
-            'Access-Control-Allow-Origin': '*'
           },
           body: request);
+//      response.
     } catch(e){
 
     }
@@ -30,7 +31,7 @@ class SearchService{
     if(response != null) {
       searchResult.price = response.body;
     } else {
-      searchResult.price = "Shit broke lose";
+      searchResult.price = "Shit broke loseeee";
     }
     return [searchResult];
     
