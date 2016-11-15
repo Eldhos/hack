@@ -1,6 +1,7 @@
 import 'package:angular2/core.dart';
 import 'package:iHAT/search/SearchResult.dart';
 import 'package:iHAT/search/SearchDetails.dart';
+import 'package:iHAT/search/adapter/SearchBuilder.dart';
 import 'package:iHAT/search/adapter/SearchAdapter.dart';
 import 'package:http/browser_client.dart';
 import 'package:http/http.dart';
@@ -28,13 +29,7 @@ class SearchService{
     }
 
     SearchResult searchResult = new SearchResult();
-    if(response != null) {
-      searchResult.price = response.body;
-    } else {
-      searchResult.price = "Shit broke loseeee";
-    }
-    return [searchResult];
-    
+    return getSearchResultList(response.body);
   }
 
 }
