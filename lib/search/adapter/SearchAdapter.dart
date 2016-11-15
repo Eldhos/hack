@@ -39,6 +39,13 @@ String getSearchRequest(SearchDetails searchDetails) {
               requestBuilder.element('DestinationLocationCode',  nest: searchDetails.destination);
               requestBuilder.element('DepartureDate',  nest: searchDetails.startdate);
             });
+            if(searchDetails.roundTrip){
+              requestBuilder.element('OriginDestinationCriteria', nest: (){
+                requestBuilder.element('OriginLocationCode',  nest: searchDetails.destination);
+                requestBuilder.element('DestinationLocationCode',  nest: searchDetails.origin);
+                requestBuilder.element('DepartureDate',  nest: searchDetails.startdate);
+              });
+            }
           });
           requestBuilder.element('MaxConnectionCount', nest:'2');
         });
