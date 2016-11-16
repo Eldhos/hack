@@ -2,6 +2,8 @@ import 'package:angular2/core.dart';
 import 'SearchDetails.dart';
 import 'package:iHAT/search/search_service.dart';
 import 'package:iHAT/search/SearchResult.dart';
+import 'package:iHAT/reprice/reprice_component.dart';
+import 'package:iHAT/notifications/push_notification_Component.dart';
 import 'dart:async';
 
 
@@ -37,13 +39,18 @@ import 'dart:async';
     </div>
   </div>
 			<div>
-				<button  type="submit">Search</button>
-				<button type="submit">Reprice</button>
-				<button type="submit">Purchase</button>
+				<button type="button" class="btn btn-primary" [disabled]="submitted"  type="submit">Search</button>
 			</div>
 			{{roundTrip}}
 			{{searchResponse}}
 		</form>
+		<div *ngIf="searchResults != null">
+			<ul>
+				<li *ngFor="let searchResult of searchResults" (onClick)="reprice(searchResult)">
+					<reprice-form [searchResult]="searchResult"> </reprice-form>
+			</ul>
+		</div>
+		<reprice-form [searchResult]="dummyResultToCheckTemplate"></reprice-form>
 		''',
 	styles: const ['''
 	  .ng-valid[required] {
@@ -53,7 +60,7 @@ import 'dart:async';
       border-left: 5px solid #a94442; /* red */
     }
 		'''],
-//	directives: const[],
+	directives: const[RepriceComponent,PushNotificationComponent],
 	providers: const[SearchService]
 
 )
@@ -66,20 +73,24 @@ class SearchComponent implements OnInit{
 	bool roundTrip;
 	bool submitted;
 	String searchResponse;
+	SearchResult dummyResultToCheckTemplate = new SearchResult();
+	List<SearchResult> searchResults = null;
 	final SearchService searchService;
 	SearchComponent(this.searchService);
 	Future<Null> search() async {
+    submitted = true;
 		SearchDetails searchDetails = new SearchDetails();
 		searchDetails.destination = destination;
 		searchDetails.origin = origin;
 		searchDetails.roundTrip = roundTrip;
 		searchDetails.startdate = departureDate;
 		searchDetails.returnDate = null;
-		List<SearchResult> results = await searchService.getSearchResults(searchDetails);
+		searchResults = await searchService.getSearchResults(searchDetails);
 
-    for(SearchResult result in results) {
+    for(SearchResult result in searchResults) {
 			searchResponse = result.price;
 		}
+    submitted = false;
 	}
 	void toggleRoundTrip(){
 		roundTrip = !roundTrip;

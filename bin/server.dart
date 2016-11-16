@@ -1,10 +1,14 @@
 import 'dart:io';
 import 'dart:convert' show UTF8, JSON;
 import 'dart:async';
+import 'dart:convert';
+import 'web_socket.dart';
+import 'kraken.dart';
 
 
 
 Future main() async {
+
   var server = await HttpServer.bind("localhost", 4042);
   startWeb();
   print('Listening for requests on 4042.');
@@ -12,50 +16,70 @@ Future main() async {
 }
 
 Future listenForRequests(HttpServer server) async {
+  WebSocket webSocket;
   await for (HttpRequest request in server) {
-    switch (request.method) {
-      case 'POST':
-        handlePost(request);
-        break;
-      case 'OPTIONS':
-        handleOptions(request);
-        break;
-      default:
-        defaultHandler(request);
-        break;
+    if (WebSocketTransformer.isUpgradeRequest(request)){
+      WebSocketTransformer.upgrade(request).then((socket) {
+        webSocket = socket;
+        handleWebSocket(webSocket);
+      });
+    }else {
+      switch (request.method) {
+        case 'POST':
+          handlePost(request);
+          webSocket.add("Received Post");
+          break;
+        case 'GET':
+          handleGet(request,webSocket);
+          break;
+        case 'OPTIONS':
+          handleOptions(request);
+          break;
+        default:
+          defaultHandler(request);
+          break;
+      }
     }
   }
   print('No more requests.');
 }
+void handleGet(HttpRequest req, WebSocket socket){
+  if(req.uri.path.contains("kraken")){
+    Kraken.fetchResposIfNeeded();
+
+  }
+
+}
+
 
 Future handlePost(HttpRequest request) async {
   StringBuffer content = new StringBuffer();
-  var req = await new HttpClient().post("localhost",8085,"/sabreprovideradapter/v2/search");
-  req.headers.contentType = new ContentType("application", "xml", charset: "utf-8");
-  print(request.contentLength);
-  await for (var contents in request.transform(UTF8.decoder)) {
-    content.write(contents);
-  }
-  var reqContent = content.toString();
-  req.write(reqContent);
-  HttpClientResponse response =  await req.close();
-  StringBuffer responseContent = new StringBuffer();
-  await for (var contents in response.transform(UTF8.decoder)) {
-    responseContent.write(contents);
-  }
-responseContent.toString();
-//  print(UTF8.decodeStream(response));
-  addCorsHeaders(request.response);
-  request.response
-    ..write(responseContent.toString())
-    ..close();
-
-
   try {
-
-  } catch (e) {
-    print('Request listen error: $e');
-    return;
+    var req = await new HttpClient().post(
+        "localhost", 8085, "/sabreprovideradapter/v2/search");
+    req.headers.contentType =
+    new ContentType("application", "xml", charset: "utf-8");
+    print(request.contentLength);
+    await for (var contents in request.transform(UTF8.decoder)) {
+      content.write(contents);
+    }
+    var reqContent = content.toString();
+    req.write(reqContent);
+    HttpClientResponse response = await req.close();
+    StringBuffer responseContent = new StringBuffer();
+    await for (var contents in response.transform(UTF8.decoder)) {
+      responseContent.write(contents);
+    }
+    responseContent.toString();
+//  print(UTF8.decodeStream(response));
+    addCorsHeaders(request.response);
+    request.response
+      ..write(responseContent.toString())
+      ..close();
+  } catch(e){
+    request.response
+        ..write("Failed to call service")
+        ..close();
   }
 }
 
