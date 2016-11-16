@@ -28,7 +28,7 @@ class SearchService{
 
     }
 
-    SearchResult searchResult = new SearchResult();
+    //SearchResult searchResult = new SearchResult();
     return getSearchResultList(response.body);
   }
 

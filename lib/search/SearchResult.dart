@@ -1,6 +1,9 @@
 class SearchResult{
   String price;
   List<OriginDestination> originDestinationList;
+
+  SearchResult(this.price,this.originDestinationList);
+
 }
 
 class OriginDestination{
